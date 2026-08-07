@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import portfolioData from "../data/portfolioData";
-import avatar from "../assets/images/avatar.svg";
+import IdCard from "./Idcard";
 
 function Hero() {
   return (
@@ -15,8 +15,12 @@ function Hero() {
           {/* Left Side */}
           <motion.div
             initial={{ opacity: 0, x: 80 }}
-            animate={{ opacity: 1, x: 0, y: [0, -15, 0], }}
-            transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut"}}
+            animate={{ opacity: 1, x: 0, y: [0, -15, 0] }}
+            transition={{
+              opacity: { duration: 0.8 },
+              x: { duration: 0.8 },
+              y: { duration: 3.5, repeat: Infinity, ease: "easeInOut" },
+            }}
           >
             <p className="text-cyan-400 text-xl mb-3">👋 Hello, I'm</p>
 
@@ -74,15 +78,7 @@ function Hero() {
             transition={{ duration: 0.8 }}
             className="flex justify-center"
           >
-            <div className="relative">
-              <div className="absolute inset-0 bg-cyan-400 blur-[120px] opacity-40 scale-125 rounded-full"></div>
-
-              <img
-                src={avatar}
-                alt="Ninad Avatar"
-                className="relative w-80 h-80 rounded-full border-4 border-cyan-500 bg-slate-800 p-4"
-              />
-            </div>
+            <IdCard />
           </motion.div>
         </div>
       </div>

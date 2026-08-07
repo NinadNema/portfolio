@@ -1,16 +1,53 @@
-# React + Vite
+# Ninad Nemawarkar — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website, built to showcase my projects, skills, and experience as a Full-Stack Software Developer.
 
-Currently, two official plugins are available:
+**Live Site:** _add your deployed URL here_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- **React 19** + **Vite** — frontend framework & build tool
+- **Tailwind CSS v4** — styling
+- **Framer Motion** — scroll animations
+- **React Icons** — icon set
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Sections
 
-## Expanding the ESLint configuration
+- **Hero** — intro, resume download, social links
+- **About** — background and focus areas
+- **Skills** — languages, frontend, backend, databases, core CS, tools
+- **Projects** — Web Trust Analyzer, SummarAI, Student Management System
+- **Education** — degree and certifications (with verification links)
+- **Contact** — email, phone, and social links
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+```bash
+# install dependencies
+npm install
+
+# run the dev server
+npm run dev
+
+# build for production
+npm run build
+
+# preview the production build
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+  components/     # Navbar, Hero, About, Skills, Projects, Education, Contact, Footer
+  data/           # portfolioData.js — single source of truth for all content
+  assets/         # images
+public/           # resume PDF, favicon, icons
+```
+
+## Contact
+
+- Email: ninad2800@gmail.com
+- GitHub: [github.com/NinadNema](https://github.com/NinadNema)
+- LinkedIn: [ninad-nemawarkar](https://www.linkedin.com/in/ninad-nemawarkar-85834a296)
