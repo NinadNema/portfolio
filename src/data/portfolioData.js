@@ -6,7 +6,7 @@ const portfolioData = {
   subtitle: "Final-Year Computer Science Undergraduate · VIT Bhopal",
 
   description:
-    "I build scalable, API-driven full-stack web applications using React.js, Node.js, FastAPI, Java, and PostgreSQL/MySQL. Experienced in designing concurrency-safe systems, real-time telemetry, and LLM-powered tools, with a strong foundation in Data Structures & Algorithms and Object-Oriented Programming.",
+    "Final-year Computer Science undergraduate (VIT Bhopal) building full-stack, API-driven applications with React.js, Node.js, FastAPI, and Java. Shipped security monitoring and AI platforms with secure JWT authentication, backed by a strong foundation in Data Structures & Algorithms, OOP, and relational databases.",
 
   email: "ninad2800@gmail.com",
 
@@ -19,11 +19,11 @@ const portfolioData = {
   leetcode: "https://leetcode.com/u/Ninad_Nemawarkar/",
 
   aboutText:
-    "I'm a final-year Computer Science undergraduate at VIT Bhopal with hands-on experience building full-stack web applications using React.js, Node.js, Express, FastAPI, and Java. I specialize in designing robust backend APIs, concurrency-safe database architectures, interactive dashboards, and AI integrations. With a strong foundation in Data Structures & Algorithms and Object-Oriented Programming, I focus on building reliable, production-grade software.",
+    "I'm a final-year Computer Science undergraduate at VIT Bhopal building full-stack, API-driven applications with React.js, Node.js, FastAPI, and Java. I have shipped a security monitoring dashboard that cut threat identification time by 30% and an AI summarization platform that compresses documents by up to 70%, both with secure JWT-based authentication. Backed by a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and relational databases, I am seeking a Full-Stack Software Developer role to build scalable, secure software.",
 
   highlights: [
-    { label: "Frontend", value: "React.js, Tailwind CSS" },
-    { label: "Backend", value: "Node.js, Express, FastAPI, Java" },
+    { label: "Frontend", value: "React.js, Tailwind CSS, Bootstrap" },
+    { label: "Backend", value: "Node.js, Express.js, FastAPI, Java" },
     { label: "Databases", value: "PostgreSQL, MySQL, SQLite" },
     { label: "Education", value: "VIT Bhopal, B.Tech CSE (2023–2027)" },
   ],
@@ -37,10 +37,10 @@ const portfolioData = {
       category: "Frontend",
       items: [
         "React.js",
-        "JavaScript (ES6+)",
         "Tailwind CSS",
+        "Bootstrap",
+        "jQuery",
         "Responsive UI Design",
-        "Framer Motion",
       ],
     },
     {
@@ -49,26 +49,31 @@ const portfolioData = {
         "Node.js",
         "Express.js",
         "FastAPI",
-        "RESTful API Design",
-        "WebSockets",
+        "EJS",
         "JDBC",
+        "REST API Design",
       ],
     },
     {
-      category: "Databases & ORM",
-      items: ["PostgreSQL", "MySQL", "SQLite", "Prisma"],
+      category: "Databases",
+      items: ["PostgreSQL", "MySQL", "SQLite", "Prisma ORM"],
     },
     {
       category: "Auth & Security",
-      items: ["JWT Authentication", "bcrypt", "Role-Based Access Control (RBAC)"],
+      items: ["JWT (JSON Web Tokens)", "bcrypt", "Role-Based Access Control (RBAC)"],
     },
     {
       category: "Core CS",
-      items: ["Data Structures & Algorithms", "OOP", "MVC Architecture", "System Design Basics"],
+      items: [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming (OOP)",
+        "MVC Architecture",
+        "System Design",
+      ],
     },
     {
-      category: "Tools & Libraries",
-      items: ["Git", "GitHub", "Recharts", "Gemini AI API", "Postman", "JUnit 5"],
+      category: "Tools & Platforms",
+      items: ["Git", "GitHub", "WebSockets", "Recharts", "Postman", "JUnit 5"],
     },
   ],
 
