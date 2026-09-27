@@ -6,7 +6,7 @@ An interactive, responsive personal portfolio built with **React 19**, **Vite**,
 
 ## 🚀 Live Demo & Links
 
-- **Live Portfolio:** [ninadnema.github.io/portfolio](https://ninadnema.github.io/portfolio) *(or your deployed Vercel/Netlify link)*
+- **Live Portfolio:** [ninadnema-portfolio.vercel.app](https://ninadnema-portfolio.vercel.app)
 - **GitHub Repository:** [github.com/NinadNema/portfolio](https://github.com/NinadNema/portfolio)
 - **LinkedIn:** [linkedin.com/in/ninad-nemawarkar-85834a296](https://www.linkedin.com/in/ninad-nemawarkar-85834a296)
 - **LeetCode:** [leetcode.com/u/Ninad_Nemawarkar/](https://leetcode.com/u/Ninad_Nemawarkar/)
