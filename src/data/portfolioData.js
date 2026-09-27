@@ -24,7 +24,7 @@ const portfolioData = {
   highlights: [
     { label: "Frontend", value: "React.js, Tailwind CSS, Bootstrap" },
     { label: "Backend", value: "Node.js, Express.js, FastAPI, Java" },
-    { label: "Databases", value: "PostgreSQL, MySQL, SQLite" },
+    { label: "Databases", value: "PostgreSQL, MySQL" },
     { label: "Education", value: "VIT Bhopal, B.Tech CSE (2023–2027)" },
   ],
 
@@ -56,24 +56,22 @@ const portfolioData = {
     },
     {
       category: "Databases",
-      items: ["PostgreSQL", "MySQL", "SQLite", "Prisma ORM"],
+      items: ["PostgreSQL", "MySQL"],
     },
     {
       category: "Auth & Security",
-      items: ["JWT (JSON Web Tokens)", "bcrypt", "Role-Based Access Control (RBAC)"],
+      items: ["JWT (JSON Web Tokens)"],
     },
     {
       category: "Core CS",
       items: [
         "Data Structures & Algorithms",
         "Object-Oriented Programming (OOP)",
-        "MVC Architecture",
-        "System Design",
       ],
     },
     {
       category: "Tools & Platforms",
-      items: ["Git", "GitHub", "WebSockets", "Recharts", "Postman", "JUnit 5"],
+      items: ["Git", "GitHub", "Postman"],
     },
   ],
 
