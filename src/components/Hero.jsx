@@ -50,7 +50,7 @@ function Hero() {
 
               <a
                 href="#contact"
-                className="border border-cyan-500 hover:bg-cyan-500 hover: tetx-white px-8 py-4 rounded-xl transition"
+                className="border border-cyan-500 hover:bg-cyan-500 hover:text-white px-8 py-4 rounded-xl transition"
               >
                 Contact Me
               </a>

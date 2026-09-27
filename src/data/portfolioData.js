@@ -3,10 +3,10 @@ const portfolioData = {
 
   role: "Full-Stack Software Developer",
 
-  subtitle: "Final-Year Computer Science Undergraduate",
+  subtitle: "Final-Year Computer Science Undergraduate · VIT Bhopal",
 
   description:
-    "I build secure, scalable full-stack web applications using React.js, FastAPI, Java, and REST APIs. Skilled in designing authentication systems, responsive interfaces, and API-driven systems, with a strong foundation in Data Structures & Algorithms and Object-Oriented Programming.",
+    "I build scalable, API-driven full-stack web applications using React.js, Node.js, FastAPI, Java, and PostgreSQL/MySQL. Experienced in designing concurrency-safe systems, real-time telemetry, and LLM-powered tools, with a strong foundation in Data Structures & Algorithms and Object-Oriented Programming.",
 
   email: "ninad2800@gmail.com",
 
@@ -19,19 +19,19 @@ const portfolioData = {
   leetcode: "https://leetcode.com/u/Ninad_Nemawarkar/",
 
   aboutText:
-    "I'm a final-year Computer Science undergraduate with hands-on experience building full-stack web applications using React.js, FastAPI, Java, and REST APIs. I enjoy designing secure authentication systems, responsive interfaces, and API-driven products, backed by a strong foundation in Data Structures & Algorithms and Object-Oriented Programming. I'm looking for a Full-Stack Software Developer role where I can build scalable, reliable software.",
+    "I'm a final-year Computer Science undergraduate at VIT Bhopal with hands-on experience building full-stack web applications using React.js, Node.js, Express, FastAPI, and Java. I specialize in designing robust backend APIs, concurrency-safe database architectures, interactive dashboards, and AI integrations. With a strong foundation in Data Structures & Algorithms and Object-Oriented Programming, I focus on building reliable, production-grade software.",
 
   highlights: [
     { label: "Frontend", value: "React.js, Tailwind CSS" },
-    { label: "Backend", value: "FastAPI, JDBC, REST APIs" },
-    { label: "Focus", value: "DSA & OOP" },
-    { label: "Currently", value: "VIT Bhopal, B.Tech CSE" },
+    { label: "Backend", value: "Node.js, Express, FastAPI, Java" },
+    { label: "Databases", value: "PostgreSQL, MySQL, SQLite" },
+    { label: "Education", value: "VIT Bhopal, B.Tech CSE (2023–2027)" },
   ],
 
   skills: [
     {
       category: "Languages",
-      items: ["Java", "Python", "JavaScript", "SQL", "HTML5", "CSS3"],
+      items: ["Java", "Python", "JavaScript (ES6+)", "SQL", "HTML5", "CSS3"],
     },
     {
       category: "Frontend",
@@ -40,37 +40,79 @@ const portfolioData = {
         "JavaScript (ES6+)",
         "Tailwind CSS",
         "Responsive UI Design",
+        "Framer Motion",
       ],
     },
     {
       category: "Backend",
-      items: ["FastAPI", "JDBC", "RESTful API Design", "JWT Authentication"],
+      items: [
+        "Node.js",
+        "Express.js",
+        "FastAPI",
+        "RESTful API Design",
+        "WebSockets",
+        "JDBC",
+      ],
     },
     {
-      category: "Databases",
-      items: ["MySQL", "SQLite"],
+      category: "Databases & ORM",
+      items: ["PostgreSQL", "MySQL", "SQLite", "Prisma"],
+    },
+    {
+      category: "Auth & Security",
+      items: ["JWT Authentication", "bcrypt", "Role-Based Access Control (RBAC)"],
     },
     {
       category: "Core CS",
-      items: ["Data Structures & Algorithms", "OOP", "MVC Architecture"],
+      items: ["Data Structures & Algorithms", "OOP", "MVC Architecture", "System Design Basics"],
     },
     {
-      category: "Tools",
-      items: ["Git", "GitHub"],
+      category: "Tools & Libraries",
+      items: ["Git", "GitHub", "Recharts", "Gemini AI API", "Postman", "JUnit 5"],
     },
   ],
 
   projects: [
     {
+      title: "API Performance & Load Testing Platform",
+      subtitle: "Real-Time Concurrent Load Testing & Telemetry Platform",
+      tech: ["React", "Node.js", "Express", "WebSockets", "SQLite", "Recharts"],
+      description:
+        "A full-stack, from-scratch performance engineering tool to execute concurrent HTTP load tests with live WebSocket telemetry, percentile latency analytics, and regression diffing.",
+      points: [
+        "Engineered a custom ConcurrencyLimiter promise engine to strictly regulate concurrent virtual users without unconstrained worker overload.",
+        "Streamed live latency, throughput (req/s), and response statuses into the UI via raw WebSockets with real-time visualization in Recharts.",
+        "Computed exact statistical percentiles (P50, P95, P99) and built automated concurrency-scaling suites to detect throughput saturation and tail-latency regressions.",
+        "Implemented multi-step request workflow chaining with dynamic variable extraction and SQLite persistence for historical test comparisons.",
+      ],
+      github: "https://github.com/NinadNema/API-Performance-Load-Testing-Platform",
+      demo: "",
+    },
+    {
+      title: "Healthcare Appointment Manager",
+      subtitle: "Full-Stack Clinic Platform with AI Summaries & Calendar Sync",
+      tech: ["React", "Node.js", "Express", "PostgreSQL", "Prisma", "Gemini AI"],
+      description:
+        "A multi-portal clinic platform for patients, doctors, and admins featuring double-booking prevention, automated Google Calendar sync, and LLM-driven visit summaries.",
+      points: [
+        "Designed a database-level partial unique index in PostgreSQL via Prisma to mathematically guarantee zero double-booking even under concurrent appointment requests.",
+        "Integrated Google Gemini AI to transform patient symptom intake into clinical triage briefs for doctors, and doctor notes into plain-language patient summaries.",
+        "Built two-way Google Calendar synchronization and automated email notifications (Nodemailer) with background retry workers for resilient job dispatching.",
+        "Implemented role-based access control (RBAC) across patient, doctor, and admin portals with automated leave-day conflict resolution.",
+      ],
+      github: "https://github.com/NinadNema/healthcare-appointment-manager",
+      demo: "",
+    },
+    {
       title: "Web Trust Analyzer",
       subtitle: "Real-Time Security Monitoring Dashboard",
-      tech: ["React.js", "JavaScript", "REST APIs"],
+      tech: ["React.js", "JavaScript", "REST APIs", "Tailwind CSS"],
       description:
-        "A React.js frontend for a Web Application Firewall (WAF) platform, integrating REST APIs from a Go backend to display real-time security telemetry and threat activity.",
+        "A React.js frontend for a Web Application Firewall (WAF) platform, integrating Go REST APIs to display real-time security telemetry, attack trends, and threat activity.",
       points: [
-        "Built interactive dashboards to visualize security events, attack statistics, severity levels, and threat-type distributions.",
-        "Designed a responsive multi-view interface covering threat monitoring, OWASP compliance, and firewall configuration, with controls for rate limiting and IP whitelisting/blacklisting.",
-        "Collaborated in a cross-functional team, owning frontend architecture and end-to-end API integration while coordinating with backend developers using Go and SQLite.",
+        "Architected interactive dashboards to visualize security events, attack statistics, severity levels, and threat-type breakdowns, cutting threat-identification time by ~30%.",
+        "Designed a responsive multi-view interface covering threat monitoring, OWASP compliance, and WAF configuration with rate-limiting and IP whitelisting.",
+        "Collaborated in a 4-person cross-functional team, owning frontend architecture and end-to-end API integration with Go and SQLite backends.",
       ],
       github: "https://github.com/cray4367/Web_Trust_Analyzer",
       demo: "",
@@ -78,13 +120,13 @@ const portfolioData = {
     {
       title: "SummarAI",
       subtitle: "AI-Powered Full-Stack Text Summarization App",
-      tech: ["React", "FastAPI", "Python", "SQLite"],
+      tech: ["React 19", "FastAPI", "Python", "DistilBART", "SQLite"],
       description:
-        "A full-stack AI text summarization application using React 19 and FastAPI, integrating DistilBART (sshleifer/distilbart-cnn-12-6) for abstractive text summarization.",
+        "A full-stack AI text summarization application using React 19 and FastAPI, integrating DistilBART (sshleifer/distilbart-cnn-12-6) to compress documents by up to 70%.",
       points: [
-        "Implemented drag-and-drop file processing for PDF, DOCX, and TXT formats, with 4 summarization modes (Normal, Academic, Simple, Research) and 3 configurable output lengths.",
+        "Implemented drag-and-drop file processing for PDF, DOCX, and TXT formats with 4 summarization modes and configurable output length presets.",
         "Developed JWT-based authentication with bcrypt password hashing and SQLite persistence for user accounts, summary history, search, and favorites.",
-        "Integrated YAKE keyword extraction with click-to-highlight, key-point and important-sentence extraction, reading-time and compression-ratio metrics, and one-click PDF export.",
+        "Integrated YAKE keyword extraction with click-to-highlight, key-point extraction, reading-time/compression-ratio metrics, and one-click PDF export.",
       ],
       github: "https://github.com/NinadNema/Text-Summarizer/",
       demo: "",
@@ -92,11 +134,11 @@ const portfolioData = {
     {
       title: "Student Management System",
       subtitle: "Full-Stack CRUD API with Spring Boot",
-      tech: ["Java", "Spring Boot", "MySQL", "JUnit 5"],
+      tech: ["Java", "Spring Boot", "MySQL", "JUnit 5", "Swagger"],
       description:
-        "A full-stack Student Management System built with Java, Spring Boot, and MySQL, featuring a dynamic 3D frontend with particle animations, full CRUD operations, pagination, and search & filter.",
+        "A full-stack Student Management System built with Java, Spring Boot, and MySQL, featuring a dynamic frontend, pagination, and OpenAPI documentation.",
       points: [
-        "Built a REST API with full CRUD operations, search by name/email, filter by course, and pagination (10 students per page).",
+        "Built a REST API with full CRUD operations, search by name/email, filter by course, and 10-item pagination.",
         "Implemented input validation, global exception handling, and professional logging with SLF4J for reliable error handling.",
         "Documented the API with Swagger/SpringDoc OpenAPI and covered core service logic with 8 unit tests using JUnit 5 and Mockito.",
       ],
@@ -119,13 +161,13 @@ const portfolioData = {
       title: "Google IT Support Certificate",
       issuer: "Google Career Certificates",
       date: "Jan 2026",
-      verify: "https://www.credly.com/go/7Nt5V8xI"
+      verify: "https://www.credly.com/go/7Nt5V8xI",
     },
     {
       title: "The Bits and Bytes of Computer Networking",
       issuer: "Google, Coursera",
       date: "Dec 2025",
-      verify: "https://coursera.org/verify/C9JEPW8QLYWP"
+      verify: "https://coursera.org/verify/C9JEPW8QLYWP",
     },
     {
       title: "JavaScript Essentials 1",
