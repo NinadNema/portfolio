@@ -1,95 +1,37 @@
-import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import portfolioData from "../data/portfolioData";
+
+function slugFor(title) {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
 
 function Projects() {
   return (
-    <section
-      id="projects"
-      className="min-h-screen flex items-center bg-slate-950 text-white py-24"
-    >
-      <div className="max-w-7xl mx-auto px-6 w-full">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6 }}
-        >
-          <p className="text-cyan-400 text-lg font-semibold tracking-wide">
-            Projects
-          </p>
-          <h2 className="text-4xl lg:text-5xl font-extrabold mt-2">
-            What I've Built
-          </h2>
-        </motion.div>
-
-        <div className="grid lg:grid-cols-2 gap-8 mt-14">
-          {portfolioData.projects.map((project, i) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 hover:border-cyan-500 transition flex flex-col"
-            >
-              <h3 className="text-2xl font-bold">{project.title}</h3>
-              <p className="text-cyan-400 mt-1">{project.subtitle}</p>
-
-              <p className="text-slate-400 mt-4 leading-7">
-                {project.description}
-              </p>
-
-              <ul className="mt-4 space-y-2">
-                {project.points.map((point, idx) => (
-                  <li
-                    key={idx}
-                    className="text-slate-400 text-sm flex gap-2 leading-6"
-                  >
-                    <span className="text-cyan-400 mt-1">▸</span>
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="flex flex-wrap gap-2 mt-6">
-                {project.tech.map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-xs font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 px-3 py-1 rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <div className="flex gap-5 mt-6 pt-6 border-t border-slate-800">
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 text-slate-300 hover:text-cyan-400 transition"
-                  >
-                    <FaGithub /> Code
-                  </a>
-                )}
-
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 text-slate-300 hover:text-cyan-400 transition"
-                  >
-                    <FaExternalLinkAlt /> Live Demo
-                  </a>
-                )}
-              </div>
-            </motion.div>
-          ))}
+    <section id="projects" className="section page-width">
+      <div className="section-heading">
+        <div>
+          <p className="eyebrow"><span>03</span> Selected work / 2024—26</p>
+          <h2>Work index<span className="accent-dot">.</span></h2>
         </div>
+        <p className="heading-note mono">05 ENTRIES<br />SORTED BY RECENCY</p>
       </div>
+      <div className="project-ledger">
+        <div className="ledger-header mono">
+          <span>NO.</span><span>PROJECT / DISCIPLINE</span><span>DOMAIN</span><span>SELECTED PROOF</span><span>↗</span>
+        </div>
+        {portfolioData.projects.map((project, index) => (
+          <a className="project-row" href={`#/work/${slugFor(project.title)}`} key={project.title}>
+            <span className="project-number mono">{String(index + 1).padStart(2, "0")}</span>
+            <span className="project-title-cell">
+              <strong>{project.title}</strong>
+              <span>{project.subtitle}</span>
+            </span>
+            <span className="project-year mono">{project.domain}</span>
+            <span className="project-metric mono">{project.metric}</span>
+            <span className="project-arrow" aria-hidden="true">↗</span>
+          </a>
+        ))}
+      </div>
+      <p className="ledger-footnote mono">SELECT AN ENTRY TO READ THE CASE NOTES</p>
     </section>
   );
 }

@@ -79,6 +79,10 @@ const portfolioData = {
     {
       title: "API Performance & Load Testing Platform",
       subtitle: "Real-Time Concurrent Load Testing & Telemetry Platform",
+      metric: "P50 / P95 / P99 · latency",
+      metricValue: "P50 / P95 / P99",
+      metricLabel: "latency percentiles",
+      domain: "PERFORMANCE",
       tech: ["React", "Node.js", "Express", "WebSockets", "SQLite", "Recharts"],
       description:
         "A full-stack, from-scratch performance engineering tool to execute concurrent HTTP load tests with live WebSocket telemetry, percentile latency analytics, and regression diffing.",
@@ -94,6 +98,10 @@ const portfolioData = {
     {
       title: "Healthcare Appointment Manager",
       subtitle: "Full-Stack Clinic Platform with AI Summaries & Calendar Sync",
+      metric: "0 double-bookings · database enforced",
+      metricValue: "0",
+      metricLabel: "double-bookings, enforced at database level",
+      domain: "HEALTHCARE",
       tech: ["React", "Node.js", "Express", "PostgreSQL", "Prisma", "Gemini AI"],
       description:
         "A multi-portal clinic platform for patients, doctors, and admins featuring double-booking prevention, automated Google Calendar sync, and LLM-driven visit summaries.",
@@ -109,6 +117,10 @@ const portfolioData = {
     {
       title: "Web Trust Analyzer",
       subtitle: "Real-Time Security Monitoring Dashboard",
+      metric: "30% faster threat identification",
+      metricValue: "30%",
+      metricLabel: "faster threat identification",
+      domain: "SECURITY",
       tech: ["React.js", "JavaScript", "REST APIs", "Tailwind CSS"],
       description:
         "A React.js frontend for a Web Application Firewall (WAF) platform, integrating Go REST APIs to display real-time security telemetry, attack trends, and threat activity.",
@@ -123,6 +135,10 @@ const portfolioData = {
     {
       title: "SummarAI",
       subtitle: "AI-Powered Full-Stack Text Summarization App",
+      metric: "Up to 70% document compression",
+      metricValue: "70%",
+      metricLabel: "maximum document compression",
+      domain: "AI PRODUCT",
       tech: ["React 19", "FastAPI", "Python", "DistilBART", "SQLite"],
       description:
         "A full-stack AI text summarization application using React 19 and FastAPI, integrating DistilBART (sshleifer/distilbart-cnn-12-6) to compress documents by up to 70%.",
@@ -137,6 +153,10 @@ const portfolioData = {
     {
       title: "Student Management System",
       subtitle: "Full-Stack CRUD API with Spring Boot",
+      metric: "8 service-level unit tests",
+      metricValue: "08",
+      metricLabel: "JUnit 5 service-level tests",
+      domain: "BACKEND API",
       tech: ["Java", "Spring Boot", "MySQL", "JUnit 5", "Swagger"],
       description:
         "A full-stack Student Management System built with Java, Spring Boot, and MySQL, featuring a dynamic frontend, pagination, and OpenAPI documentation.",
