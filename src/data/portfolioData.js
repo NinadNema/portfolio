@@ -3,10 +3,10 @@ const portfolioData = {
 
   role: "Full-Stack Software Developer",
 
-  subtitle: "Final-Year Computer Science Undergraduate · VIT Bhopal",
+  subtitle: "Final-Year Computer Science Undergraduate · Vellore Institute of Technology",
 
   description:
-    "Final-year Computer Science undergraduate (VIT Bhopal) building full-stack, API-driven applications with React.js, Node.js, FastAPI, and Java. Shipped security monitoring and AI platforms with secure JWT authentication, backed by a strong foundation in Data Structures & Algorithms, OOP, and relational databases.",
+    "Final-year Computer Science undergraduate (Vellore Institute of Technology) building full-stack, API-driven applications with React.js, Node.js, FastAPI, and Java. Shipped security monitoring and AI platforms with secure JWT authentication, backed by a strong foundation in Data Structures & Algorithms, OOP, and relational databases.",
 
   email: "ninad2800@gmail.com",
 
@@ -19,13 +19,13 @@ const portfolioData = {
   leetcode: "https://leetcode.com/u/Ninad_Nemawarkar/",
 
   aboutText:
-    "I'm a final-year Computer Science undergraduate at VIT Bhopal building full-stack, API-driven applications with React.js, Node.js, FastAPI, and Java. I have shipped a security monitoring dashboard that cut threat identification time by 30% and an AI summarization platform that compresses documents by up to 70%, both with secure JWT-based authentication. Backed by a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and relational databases, I am seeking a Full-Stack Software Developer role to build scalable, secure software.",
+    "I'm a final-year Computer Science undergraduate at Vellore Institute of Technology building full-stack, API-driven applications with React.js, Node.js, FastAPI, and Java. I have shipped a security monitoring dashboard that cut threat identification time by 30% and an AI summarization platform that compresses documents by up to 70%, both with secure JWT-based authentication. Backed by a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and relational databases, I am seeking a Full-Stack Software Developer role to build scalable, secure software.",
 
   highlights: [
     { label: "Frontend", value: "React.js, Tailwind CSS, Bootstrap" },
     { label: "Backend", value: "Node.js, Express.js, FastAPI, Java" },
     { label: "Databases", value: "PostgreSQL, MySQL" },
-    { label: "Education", value: "VIT Bhopal, B.Tech CSE (2023–2027)" },
+    { label: "Education", value: "Vellore Institute of Technology, B.Tech CSE (2023–2027)" },
   ],
 
   skills: [
