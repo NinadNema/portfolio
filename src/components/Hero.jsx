@@ -21,7 +21,7 @@ function Hero() {
         </div>
         <div>
           <span className="mono">EDUCATION</span>
-          <strong>B.Tech Computer Science · VIT Bhopal</strong>
+          <strong>B.Tech Computer Science · Vellore Institute of Technology</strong>
         </div>
         <div>
           <span className="mono">STATUS</span>

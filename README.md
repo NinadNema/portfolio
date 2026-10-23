@@ -127,7 +127,7 @@ portfolio/
 
 ## 📬 Contact & Connect
 
-- **Ninad Nemawarkar** — B.Tech Computer Science, VIT Bhopal
+- **Ninad Nemawarkar** — B.Tech Computer Science, Vellore Institute of Technology
 - **Email:** [ninad2800@gmail.com](mailto:ninad2800@gmail.com)
 - **GitHub:** [@NinadNema](https://github.com/NinadNema)
 - **LinkedIn:** [ninad-nemawarkar](https://www.linkedin.com/in/ninad-nemawarkar-85834a296)
