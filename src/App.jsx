@@ -14,11 +14,11 @@ function PinnedStatement() {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "end start"],
+    offset: ["start start", "end end"],
   });
   const clipPath = useTransform(
     scrollYProgress,
-    [0.3, 0.7],
+    [0, 1],
     ["inset(0 100% 0 0)", "inset(0 0% 0 0)"],
   );
 
